@@ -1,10 +1,5 @@
 README — Resume Analyzer API
 ============================
-
-What I did and how I produced this README
-----------------------------------------
-I scanned the repository source files (main.py and graph.py) and extracted the runtime behavior, API surface, graph workflow, LLM client implementation, and environment configuration that the code contains. Below is a README generated strictly from the code (no external assumptions).
-
 Project overview
 ----------------
 Resume Analyzer API accepts a resume file (PDF/DOCX/TXT), extracts technical skills, infers experience level and location, and returns those fields along with a list of relevant job results. The project uses a small LLM client that calls a Hugging Face Space endpoint and a LangGraph-style workflow (built and executed in graph.py) to coordinate extraction and job-finding steps. The service is exposed via a FastAPI application.
